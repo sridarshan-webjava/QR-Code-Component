@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <title>Frontend Mentor | QR code component</title>
+  </head>
+  <body
+    class="font-sans bg-lightGray grid place-items-center h-screen w-screen overflow-hidden"
+  >
+    <main class="self-end">
+      <section
+        style="transform: translateX(100%)"
+        id="card"
+        class="absolute inset-0 flex justify-center items-center transition duration-500 ease-in-out"
+      >
+        <div
+          class="bg-white px-4 pt-4 pb-6 flex justify-center items-center flex-col w-72 text-center rounded-2xl shadow-md relative"
+        >
+          <img
+            class="block w-64 h-64 rounded-xl mb-6"
+            src="../../images/image-qr-code.png"
+            alt="qr-code"
+          />
+          <h1 class="text-darkBlue font-bold text-xl mb-3">
+            Improve your front-end skills by building projects
+          </h1>
+          <p class="text-md text-grayishBlue">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+          <button
+            id="close-btn"
+            class="bg-blue-600 py-1 px-2.5 text-white font-bold rounded-full absolute -top-3 -right-3"
+          >
+            X
+          </button>
+        </div>
+      </section>
+      <button
+        id="view-btn"
+        class="bg-blue-600 text-white px-5 py-3 text-3xl rounded-full shadow-md shadow-gray-400 transform translate-y-0 scale-100 hover:-translate-y-2 transition duration-500 ease-in-out active:scale-95"
+      >
+        View QR Code
+      </button>
+    </main>
+    <footer class="self-end pb-5">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-blue-600"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/sridarshan-webjava" class="text-blue-600"
+        >B.Sridarshan</a
+      >.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
